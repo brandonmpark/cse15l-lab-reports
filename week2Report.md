@@ -68,7 +68,23 @@ public void testFirst() {
 
 ![Test Failure Screenshot](https://user-images.githubusercontent.com/25190789/214686573-6930139b-dbb2-45c1-81eb-875ae0b0fddc.png)
 
-The program failed this test, resulting in a `NullPointerException` rather than throwing a `NoSuchElementException` as desired, much like the `last` method does. However, the nonnull input in the test resulted in a success, as the program correctly returned `1` as expected. 
+The program failed this test, resulting in a `NullPointerException` rather than throwing a `NoSuchElementException` as desired, much like the `last` method does. However, the nonnull input in the test resulted in a success, as the program correctly returned `1` as expected. Thus, I expected that the symptom was due to the `first` method not handling null inputs correctly. In order to fix this, I added a check at the beginning of the method for `root` being null (i.e., the list is empty), throwing a `NoSuchElementException` as expected. This resulted in the following code, which passed the tests successfully:
 
+```java
+public int first() {
+    if (root == null)
+        throw new NoSuchElementException();
+    return this.root.value;
+}
+```
+
+The original code was as follows:
+```java
+public int first() {
+    return this.root.value;
+}
+```
 
 ## Part 3
+
+Something I learned the last 2 weeks of lab is how web servers work in Java, as I'd never really experimented with them before. I was also surprised by how easy they are to work with (excluding the prewritten Server code we used), only requiring a relatively simple Handler class to be able to add fairly complicated functionality.
