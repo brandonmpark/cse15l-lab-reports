@@ -47,13 +47,14 @@ written_2 % grep -Rc "the"
 
 This command recursively searches the directory for files containing "the", and counts the number of matching lines in each file. This could be useful for analyzing large sets of text files for given words and their frequencies, such as in statistical analysis.
 
-## `-v`
+## `-i`
 
-Another command-line option I found for `grep` (on [Wikibooks](https://en.wikibooks.org/wiki/Grep)) is `-v`. This option inverts the match, essentially outputting the files that do not match the desired string.
-
-```bash
-```
+Another command-line option I found for `grep` (on [Wikibooks](https://en.wikibooks.org/wiki/Grep)) is `-i`. This option ignores case when looking for matching lines.
 
 ## `-e`
 
+Another command-line option I found for `grep` (on [Wikibooks](https://en.wikibooks.org/wiki/Grep)) is `-e`. This option allows for a RegEx pattern to be used for matching file contents
+
 ## `-o`
+
+The last command-line option I found for `grep` (on [Wikibooks](https://en.wikibooks.org/wiki/Grep)) is `-o`. This option outputs the matched parts of the file, rather than the entire lines containing the matches.
