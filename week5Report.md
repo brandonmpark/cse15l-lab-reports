@@ -4,7 +4,7 @@ The command I chose to research is `grep`.
 
 ## `-l` and `-c`
 
-The first command-line options I found for `grep` (on [Wikibooks](https://en.wikibooks.org/wiki/Grep)) are `-l` and `-c`. The `-l` option is described to "output matching files only", whire the `-c` option is described to "output count of matching lines only". In other words, rather than printing the matching contents of the file, `-l` and `-c` allow for only compacted results to be displayed.
+The first command-line options I found for `grep` (on [Wikibooks](https://en.wikibooks.org/wiki/Grep)) are `-l` and `-c`. The `-l` option is described to "output matching files only", where the `-c` option is described to "output count of matching lines only". In other words, rather than printing the matching contents of the file, `-l` and `-c` allow for only compacted results to be displayed.
 
 ```bash
 written_2 % grep -Rl "Batu Renggong"
@@ -117,7 +117,7 @@ HandRIsrael.txt
 ...etc
 ```
 
-This command lists all the files in `berlitz1/`, then pipes the output into a command that searches for lines matching the ".\*(anc|txt)" pattern. Essentially, the command finds all .txt or .anc files. 
+This command lists all the files in `berlitz1/`, then pipes the output into a command that searches for lines matching the `.\*(anc|txt)` pattern. Essentially, the command finds all .txt or .anc files. 
 
 ```bash
 written_2 % grep -R '<link targets="[a-z]*-[a-z][0-9]*"/>'
