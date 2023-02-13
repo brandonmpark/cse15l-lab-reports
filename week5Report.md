@@ -135,7 +135,7 @@ written_2 % grep -R '<link targets="[a-z]*-[a-z][0-9]*"/>'
 ...etc
 ```
 
-This command searches for all lines matching the RegEx `<link targets="[a-z]*-[a-z][0-9]*"/>`, which is essentially any string of the form "<link targets="[letters]-[letter][digits]"\>. In general, the command is useful for looking for patterns when you already know generally what form the desired data is of.
+This command searches for all lines matching the RegEx `<link targets="[a-z]*-[a-z][0-9]*"/>`, which is essentially any string of the form `<link targets="[letters]-[letter][digits]"\>`. In general, the command is useful for looking for patterns when you already know generally what form the desired data is of.
 
 ## `-o`
 
@@ -172,4 +172,4 @@ written_2 % grep -Ro '[a-zA-Z]*="[a-zA-Z]*"'
 ...etc
 ```
 
-This command searches for all lines matching the RegEx `[a-zA-Z]*="[a-zA-Z]*"`, which is any string of the form '[letters]="[letters]"'. Again, the `-o` option prints only the matched part of the line.
+This command searches for all lines matching the RegEx `[a-zA-Z]*="[a-zA-Z]*"`, which is any string of the form `[letters]="[letters]"`. Again, the `-o` option prints only the matched part of the line.
